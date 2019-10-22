@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2560</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>2560</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>8 Channel ADC graphs </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="plot0123">
+      <item>
+       <layout class="QHBoxLayout" name="plot01">
+        <item>
+         <layout class="QVBoxLayout" name="plot0box">
+          <item>
+           <widget class="QCustomPlot" name="plot0" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>610</width>
+              <height>450</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="plot0label">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Channel 0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="plot1box">
+          <item>
+           <widget class="QCustomPlot" name="plot1" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>610</width>
+              <height>450</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="plot1label">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Channel 1</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>60</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="plot23">
+        <item>
+         <layout class="QVBoxLayout" name="plot2box">
+          <item>
+           <widget class="QCustomPlot" name="plot2" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>610</width>
+              <height>450</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="plot2label">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Channel 2</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="plot3box">
+          <item>
+           <widget class="QCustomPlot" name="plot3" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>610</width>
+              <height>450</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="plot3label">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Channel 3</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="plot4567">
+      <item>
+       <layout class="QHBoxLayout" name="plot45">
+        <item>
+         <layout class="QVBoxLayout" name="plot4box">
+          <item>
+           <widget class="QCustomPlot" name="plot4" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>610</width>
+              <height>450</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="plot4label">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Channel 4</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="plot5box">
+          <item>
+           <widget class="QCustomPlot" name="plot5" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>610</width>
+              <height>450</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="plot5label">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Channel 5</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>60</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="plot67">
+        <item>
+         <layout class="QVBoxLayout" name="plot6box">
+          <item>
+           <widget class="QCustomPlot" name="plot6" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>610</width>
+              <height>450</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="plot6label">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Channel 6</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="plot7box">
+          <item>
+           <widget class="QCustomPlot" name="plot7" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>610</width>
+              <height>450</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="plot7label">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Channel 7</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
